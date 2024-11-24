@@ -10,17 +10,15 @@
     <label for="celsius">Celsius:</label>
     <input type="number" id="celsius">
     <br>
-    
-    <button onclick="calculateArea()">Calculate Area</button>
+    <button onclick="c2f()">Convert Celsius to Fahrenheit</button>
     <p id="result"></p>
-
+    <br>
     <script>
-        function calculateArea() {
-          let celsius = parseFloat(document.getElementById("celsius").value);
-        
-          let fahrenheit = (celsius*9/5)+32;
-          document.getElementById("result").innerHTML = "Fahrenheit: " + fahrenheit;
+        function c2f() {
+        let celsius = parseFloat(document.getElementById("celsius").value);
+        let temperature = fahrenheit = (celsius * 9/5) + 32;
+        document.getElementById("result").innerHTML = celsius + "℃" + fahrenheit + "F";
         }
-      </script>
+    </script>
 </body>
 </html>
